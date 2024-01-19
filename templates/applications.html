@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Applications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon Image-->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+
+
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+        <style type="text/css">
+            body {
+              -webkit-font-smoothing: antialiased;
+              -moz-font-smoothing: grayscale;
+            }
+
+            .items-display{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+    
+            }
+
+            
+          
+            .flex-element {
+                flex: 1;
+                position:relative;
+            }
+
+        @media (min-width: 768px) {
+            .flex-element {
+                flex: 0 0 calc(50% - 10px); /* 50% width with some spacing (adjust as needed) */
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .flex-element {
+                flex: 0 0 calc(33% - 10px); /* 50% width with some spacing (adjust as needed) */
+            }
+        }
+
+
+      
+            .ui.inverted.segment {
+              background-color: #777;
+            }
+      
+            .ui.vertical.segment:not(.inverted) {
+              padding-top: 6rem;
+              padding-bottom: 6rem;
+            }
+      
+            .six.wide.column img {
+              width: 100%;
+            }
+      
+            .ui.borderless.inverted.menu {
+              position: absolute;
+              background-color: #2f2f2f;
+              border-radius: 4px;
+              flex-wrap: wrap;
+              
+              left:13px;
+              right:20px;
+              
+            }
+      
+            .ui.borderless.inverted.menu  .active.item {
+              background-color: lightgray !important;
+              color:#000 !important;
+              font-weight: bold;
+              width:25%;
+              justify-content: center;
+              align-items: center;
+            }
+
+            a.item{
+              
+              font-weight: bold;
+              width:25%;
+              justify-content: center;
+              align-items: center;
+            }
+      
+            span.sub {
+              color: rgba(0, 0, 0, 0.6);
+            }
+      
+            .ten.wide.column h1 {
+              font-size: 3rem;
+            }
+      
+            .ten.wide.column p {
+              font-size: 1.5rem;
+            }
+      
+            p code {
+              color: #c7254e;
+              background-color: #f9f2f4;
+              border-radius: 4px;
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+            }
+      
+            .ui.tablet.computer.only.padded.grid {
+              position: absolute;
+              z-index: 8;
+              width: 100%;
+              top: 1rem;
+            }
+      
+            .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+              display: none;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+              float: unset;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+              content: "\f0d7";
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+              position: static;
+              width: 100%;
+              background-color: unset;
+              border: none;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
+              background-color: rgb(47, 47, 47);
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+              margin-top: 6px;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
+              color: rgba(255, 255, 255, 0.9) !important;
+            }
+      
+            .slide .ui.inverted.vertical.segment {
+              padding-top: 16rem;
+              padding-bottom: 4rem;
+              height: 600px;
+            }
+      
+            .slide .ui.text.container {
+              max-width: 70%;
+            }
+      
+            .slick-dotted.slick-slider {
+              margin-bottom: 0;
+            }
+      
+            .slick-prev.slick-arrow {
+              padding-left: 8rem;
+              padding-right: calc(8rem + 20px);
+              display: inline-block;
+              height: 100%;
+              z-index: 32;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(0, 0, 0, 0.0001) 100%
+              );
+            }
+      
+            .slick-next.slick-arrow {
+              padding-left: 8rem;
+              padding-right: calc(8rem + 20px);
+              display: inline-block;
+              height: 100%;
+              z-index: 32;
+              background: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(0, 0, 0, 0.0001) 100%
+              );
+            }
+      
+            @media only screen and (max-width: 767px) {
+              .slick-prev.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+              }
+      
+              .slick-next.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+              }
+            }
+      
+            .slick-dots {
+              bottom: 15px;
+            }
+      
+            .slide .ui.segment h1 {
+              font-size: 3rem;
+            }
+      
+            .slide .ui.segment p {
+              font-size: 1.5rem;
+            }
+
+            .heading-section {
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  margin-bottom: 20px; 
+}
+
+.search-and-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 6px;
+    
+}
+
+#dashboardSearch {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: lightgray;  
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#dashboardSearch::placeholder {
+    color: #111;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+    background-color: lightgray;      
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+}
+
+/* Additional styles for hiding the default dropdown arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Additional styles for the select options */
+select option {
+    font-weight: normal;
+}
+
+
+.heading-section {
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  margin-bottom: 20px; 
+}
+
+
+.position-footer {
+  position: absolute;
+  bottom: 10px;
+}
+          </style>
+
+          <!-- Google Analytics Tracking Code -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_TRACKING_ID }}"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag() {
+         dataLayer.push(arguments);
+       }
+       gtag('js', new Date());
+       gtag('config', '{{ GA_TRACKING_ID }}');
+       gtagEnabled=True;
+     </script>
+  </head>
+  <body>
+    <div class="ui tablet computer only padded grid">
+        <div class="ui container">
+          <div class="ui inverted borderless huge menu">
+            <!-- <a class="header item"><i>Data Science</i></a> -->
+            <a class="item" href="{% url 'index' %}">Home</a> 
+            <a class="item" href="{% url 'dashboard' %}">Dashboards</a>
+            <a class="active item" href="{% url 'app' %}">Applications</a>
+            <a class="item" href="{% url 'learning' %}">Learning</a>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui mobile only grid">
+        <div class="ui top fixed inverted borderless huge menu">
+          <a class="header item">Data Science</a>
+          <div class="right menu">
+            <div class="item">
+              <button class="ui icon toggle basic inverted button">
+                <i class="content icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ui vertical borderless inverted fluid menu">
+            <a class="item" href="{% url 'index' %}">Home</a> 
+            <a class="item" href="{% url 'dashboard' %}">Dashboards</a>
+            <a class="active item" href="{% url 'app' %}">Applications</a>
+            <a class="item" href="{% url 'learning' %}">Learning</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+		
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="heading-section mb-5">Applications</h2>
+
+            <div class="search-and-sort">
+              <input type="text" id="dashboardSearch" placeholder="Search by category" oninput="filterDashboards()" />
+              <label for="sort"></label>
+              <select id="sort" onchange="sortDashboards()">
+                  <option value="" hidden>Sort By:</option>
+                  <option value="nameAsc">Name (A-Z)</option>
+                  <option value="nameDesc">Name (Z-A)</option>
+                  <option value="categoryAsc">Tag (A-Z)</option>
+                  <option value="categoryDesc">Tag (Z-A)</option>
+              </select>
+          </div>
+
+					</div>
+			<div class="col-md-12">
+                <div class="items-display">
+			<!-- <div class="featured-carousel owl-carousel"> --> 
+			    <div class="item flex-element">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img" style="background-image: url(../static/images/person_1.jpg)">
+                  </div> -->
+                  <div class="text pl-4">
+                  	<span class="d-flex align-items-center justify-content-center">
+                      <!-- <i class="ion-ios-quote"></i> -->
+                    </span>
+                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=POD_Dashboard" rel="noopener noreferrer">StampSense AI</a></p>
+                    <p>A digital tool displaying detected stamps on invoices using AI.</p>
+                    <div class="position-footer">
+                    <span class="position">Sales Commercial</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item flex-element">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img" style="background-image: url(../static/images/person_2.jpg)">
+                  </div> -->
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <!-- <i class="ion-ios-quote"></i> -->
+                    </span>
+                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=CODE_Tracer" rel="noopener noreferrer">CODETracer</a></p>
+                    <p>An application ensuring adherence to regulatory and coding standards for safety and legal compliance in development.</p>
+                    <div class="position-footer">
+                    <span class="position">Data Science</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item flex-element">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img" style="background-image: url(../static/images/person_2.jpg)">
+                  </div> -->
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <!-- <i class="ion-ios-quote"></i> -->
+                    </span>
+                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=EDAapp" rel="noopener noreferrer">DataMind</a></p>
+                    <p>Revolutionize data exploration with our EDA app. Visualize, analyze, and gain insights effortlessly. Transform raw data into actionable intelligence.</p>
+                    <div class="position-footer">
+                    <span class="position">Data Science</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="item flex-element">
+                <div class="testimony-wrap d-flex">
+                  
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                     
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Mark Huff</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="item flex-element">
+                <div class="testimony-wrap d-flex">
+                  
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Rodel Golez</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+     
+              <div class="item flex-element">
+                <div class="testimony-wrap d-flex">
+                 
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                     
+                    </span>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Ken Bosh</p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/popper.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script>
+      function filterDashboards() {
+          var input, filter, item, name, category;
+          input = document.getElementById("dashboardSearch");
+          filter = input.value.toUpperCase();
+          item = document.querySelectorAll(".flex-element");
+  
+          item.forEach(function (el) {
+              name = el.querySelector(".name");
+              category = el.querySelector(".position");
+              if (name.innerHTML.toUpperCase().indexOf(filter) > -1 || category.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  el.style.display = "";
+              } else {
+                  el.style.display = "none";
+              }
+          });    
+      }
+
+      function sortDashboards() {
+    var select = document.getElementById("sort");
+    var selectedOption = select.value;
+    var items = document.querySelectorAll(".flex-element");
+    var container = document.querySelector(".items-display");
+
+    var sortedItems = Array.from(items);
+
+    switch (selectedOption) {
+        case "nameAsc":
+            sortedItems.sort((a, b) => {
+                var nameA = a.querySelector(".name").textContent.toUpperCase();
+                var nameB = b.querySelector(".name").textContent.toUpperCase();
+                return nameA.localeCompare(nameB);
+            });
+            break;
+        case "nameDesc":
+            sortedItems.sort((a, b) => {
+                var nameA = a.querySelector(".name").textContent.toUpperCase();
+                var nameB = b.querySelector(".name").textContent.toUpperCase();
+                return nameB.localeCompare(nameA);
+            });
+            break;
+        case "categoryAsc":
+            sortedItems.sort((a, b) => {
+                var categoryA = a.querySelector(".position").textContent.toUpperCase();
+                var categoryB = b.querySelector(".position").textContent.toUpperCase();
+                return categoryA.localeCompare(categoryB);
+            });
+            break;
+        case "categoryDesc":
+            sortedItems.sort((a, b) => {
+                var categoryA = a.querySelector(".position").textContent.toUpperCase();
+                var categoryB = b.querySelector(".position").textContent.toUpperCase();
+                return categoryB.localeCompare(categoryA);
+            });
+            break;
+    }
+
+    // Remove existing items
+    items.forEach(function (item) {
+        container.removeChild(item);
+    });
+
+    // Append sorted items back to the container
+    sortedItems.forEach(function (item) {
+        container.appendChild(item);
+    });
+
+}
+</script>
+
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "jde5hjf8qt");
+  </script>
+
+  <!-- <script>
+    function trackApplicationClick(applicationName) {
+  gtag('event', 'application_dashboard_click', {
+    'event_category': 'Application Dashboard Interaction',
+    'event_label': applicationName
+  });
+}
+  </script> -->
+      
+  </body>
+</html>

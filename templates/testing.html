@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Testing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+
+
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+        <style type="text/css">
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tab-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #0056b3;
+}
+
+.test-app {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+}
+
+.test-app h2 {
+    font-size: 24px;
+}
+
+
+
+            body {
+              -webkit-font-smoothing: antialiased;
+              -moz-font-smoothing: grayscale;
+            }
+
+            .items-display{
+                display:flex;
+                flex-wrap: wrap;
+                height: 100%;
+                
+            }
+            
+          
+            .flex-element {
+                flex: 1;
+                position:relative;
+                
+            }
+
+            @media (min-width: 768px) {
+                .flex-element {
+                    flex: 0 0 calc(50% - 10px); /* 50% width with some spacing (adjust as needed) */
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .flex-element {
+                    flex: 0 0 calc(33% - 10px); /* 50% width with some spacing (adjust as needed) */
+                }
+            }
+
+      
+            .ui.inverted.segment {
+              background-color: #777;
+            }
+      
+            .ui.vertical.segment:not(.inverted) {
+              padding-top: 6rem;
+              padding-bottom: 6rem;
+            }
+      
+      
+            .ui.borderless.inverted.menu {
+              background-color: #2f2f2f;
+              border-radius: 4px;
+              flex-wrap: wrap;
+            }
+      
+            .ui.borderless.inverted.menu .active.item {
+              background-color: lightgray;
+              color:#000 !important;
+              font-weight: bold;
+            }
+
+            
+          
+            span.sub {
+              color: rgba(0, 0, 0, 0.6);
+            }
+      
+          
+      
+            .ui.tablet.computer.only.padded.grid {
+              position: absolute;
+              z-index: 8;
+              width: 100%;
+              top: 1rem;
+            }
+      
+            .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+              display: none;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+              float: unset;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+              content: "\f0d7";
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+              position: static;
+              width: 100%;
+              background-color: unset;
+              border: none;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
+              background-color: rgb(47, 47, 47);
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+              margin-top: 6px;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
+              color: rgba(255, 255, 255, 0.9) !important;
+          
+            }
+      
+            .slide .ui.inverted.vertical.segment {
+              padding-top: 16rem;
+              padding-bottom: 4rem;
+              height: 600px;
+            }
+      
+            .slide .ui.text.container {
+              max-width: 70%;
+            }
+      
+            .slick-dotted.slick-slider {
+              margin-bottom: 0;
+            }
+      
+            .slick-prev.slick-arrow {
+              padding-left: 8rem;
+              padding-right: calc(8rem + 20px);
+              display: inline-block;
+              height: 100%;
+              z-index: 32;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(0, 0, 0, 0.0001) 100%
+              );
+            }
+      
+            .slick-next.slick-arrow {
+              padding-left: 8rem;
+              padding-right: calc(8rem + 20px);
+              display: inline-block;
+              height: 100%;
+              z-index: 32;
+              background: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(0, 0, 0, 0.0001) 100%
+              );
+            }
+      
+            @media only screen and (max-width: 767px) {
+              .slick-prev.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+              }
+      
+              .slick-next.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+              }
+            }
+      
+            .slick-dots {
+              bottom: 15px;
+            }
+      
+            .slide .ui.segment h1 {
+              font-size: 3rem;
+            }
+      
+            .slide .ui.segment p {
+              font-size: 1.5rem;
+            }
+
+
+          </style>
+          <!-- Google Analytics Tracking Code -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_TRACKING_ID }}"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag() {
+         dataLayer.push(arguments);
+       }
+       gtag('js', new Date());
+       gtag('config', '{{ GA_TRACKING_ID }}');
+       gtagEnabled=True;
+     </script>
+  </head>
+  <body>
+    <div class="ui tablet computer only padded grid">
+        <div class="ui container">
+          <div class="ui inverted borderless huge menu">
+            <a class="header item">Data Science</a>
+            <a class="item" href="{% url 'index' %}">Home</a> 
+            <a class="active item" href="{% url 'dashboard' %}">Dashboards</a>
+            <a class="item" href="{% url 'app' %}">Applications</a>
+            <a class="item" href="{% url 'learning' %}">Learning</a>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui mobile only grid">
+        <div class="ui top fixed inverted borderless huge menu">
+          <a class="header item">Data Science</a>
+          <div class="right menu">
+            <div class="item">
+              <button class="ui icon toggle basic inverted button">
+                <i class="content icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="ui vertical borderless inverted fluid menu">
+            <a class="item" href="{% url 'index' %}">Home</a> 
+            <a class="active item" href="{% url 'dashboard' %}">Dashboards</a>
+            <a class="item" href="{% url 'app' %}">Applications</a>
+            <a class="item" href="{% url 'learning' %}">Learning</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <h1>Testing</h1>
+        <div id="test-apps">
+            <button class="tab-button" onclick="showApp('app1')">App 1</button>
+            <button class="tab-button" onclick="showApp('app2')">App 2</button>
+        </div>
+
+        <div id="app1" class="test-app">
+            <h2>App 1</h2>
+            <p>This is the first test app description.</p>
+            <!-- Add your App 1 content here -->
+        </div>
+
+        <div id="app2" class="test-app" style="display: none;">
+            <h2>App 2</h2>
+            <p>This is the second test app description.</p>
+            <!-- Add your App 2 content here -->
+        </div>
+    </main>
+		
+		
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/popper.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/main.js"></script>
+
+    <script>
+        function showApp(appId) {
+    const apps = document.querySelectorAll('.test-app');
+    const buttons = document.querySelectorAll('.tab-button');
+
+    apps.forEach(app => app.style.display = 'none');
+    buttons.forEach(button => button.style.backgroundColor = '#007bff');
+
+    const app = document.getElementById(appId);
+    app.style.display = 'block';
+
+    const button = document.querySelector(`[onclick="showApp('${appId}']`);
+    button.style.backgroundColor = '#0056b3';
+}
+
+// Show the first app by default
+showApp('app1');
+
+    </script>
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "jde5hjf8qt");
+</script>
+  
+      
+  </body>
+</html>

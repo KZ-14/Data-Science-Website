@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon Image-->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+
+
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+        <style type="text/css">
+  body {
+              -webkit-font-smoothing: antialiased;
+              -moz-font-smoothing: grayscale;
+              overflow: hidden;
+              
+            }
+
+
+
+            .items-display{
+                display:flex;
+                flex-wrap: wrap;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+               
+                
+            }
+            
+          
+            .flex-element {
+                flex: 1;
+                position:relative;
+                border-radius: 20px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                align-items: stretch;
+                
+                
+                
+            }
+
+            @media (max-width: 767px) {
+                .flex-element {
+                    flex: 0 0 calc(50% - 10px); /* 50% width with some spacing (adjust as needed) */
+                    border-radius: 20px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    align-items: stretch;
+                }
+            }
+            
+
+            @media (min-width: 768px) {
+                .flex-element {
+                    flex: 0 0 calc(33% - 10px); /* 50% width with some spacing (adjust as needed) */
+                    border-radius: 20px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    align-items: stretch;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .flex-element {
+                    flex: 0 0 calc(20% - 10px); /* 50% width with some spacing (adjust as needed) */
+                    border-radius: 20px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    
+
+                    
+  
+                }
+            }
+
+            @media (min-width: 1500px) {
+                .flex-element {
+                    flex: 0 0 calc(20% - 10px); /* 50% width with some spacing (adjust as needed) */
+                    border-radius: 20px;
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+                    
+  
+                }
+            }
+
+
+           
+
+
+      
+            .ui.inverted.segment {
+              background-color: #777;
+            }
+      
+            .ui.vertical.segment:not(.inverted) {
+              padding-top: 6rem;
+              padding-bottom: 6rem;
+            }
+      
+      
+            .ui.borderless.inverted.menu {
+              position: absolute;
+              background-color: #2f2f2f;
+              border-radius: 4px;
+              flex-wrap: wrap;
+              margin-top: -20px;
+              left:13px;
+              right:20px;
+              
+            }
+      
+            .ui.borderless.inverted.menu  .active.item {
+              background-color: lightgray !important;
+              color:#000 !important;
+              font-weight: bold;
+              width:25%;
+              justify-content: center;
+              align-items: center;
+            }
+
+            a.item{
+              
+              font-weight: bold;
+              width:25%;
+              justify-content: center;
+              align-items: center;
+            }
+
+
+            
+          
+            span.sub {
+              color: rgba(0, 0, 0, 0.6);
+            }
+      
+          
+      
+            .ui.tablet.computer.only.padded.grid {
+              position: absolute;
+              z-index: 0;
+              width: 100%;
+              top: 1rem;
+            }
+      
+            .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+              display: none;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+              float: unset;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+              content: "\f0d7";
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+              position: static;
+              width: 100%;
+              background-color: unset;
+              border: none;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
+              background-color: rgb(47, 47, 47);
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+              margin-top: 6px;
+            }
+      
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
+            .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
+              color: rgba(255, 255, 255, 0.9) !important;
+          
+            }
+      
+            .slide .ui.inverted.vertical.segment {
+              padding-top: 16rem;
+              padding-bottom: 4rem;
+              height: 600px;
+            }
+      
+            .slide .ui.text.container {
+              max-width: 70%;
+            }
+      
+            .slick-dotted.slick-slider {
+              margin-bottom: 0;
+            }
+      
+            .slick-prev.slick-arrow {
+              padding-left: 8rem;
+              padding-right: calc(8rem + 20px);
+              display: inline-block;
+              height: 100%;
+              z-index: 32;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(0, 0, 0, 0.0001) 100%
+              );
+            }
+      
+            .slick-next.slick-arrow {
+              padding-left: 8rem;
+              padding-right: calc(8rem + 20px);
+              display: inline-block;
+              height: 100%;
+              z-index: 32;
+              background: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(0, 0, 0, 0.0001) 100%
+              );
+            }
+      
+            @media only screen and (max-width: 767px) {
+              .slick-prev.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+              }
+      
+              .slick-next.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+              }
+            }
+      
+            .slick-dots {
+              bottom: 15px;
+            }
+      
+            .slide .ui.segment h1 {
+              font-size: 3rem;
+            }
+      
+            .slide .ui.segment p {
+              font-size: 1.5rem;
+            }
+
+
+
+.heading-section {
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  margin-bottom: 20px; 
+}
+
+.position-footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;     
+   
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-right:20px;
+    margin-left:5px; 
+ 
+}
+
+
+
+/* Style for the video player */
+.container1 .video-player {
+    
+    margin-top: 70px;
+    flex: 1 0 70%; /* Updated specificity */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: auto;
+    
+    
+}
+
+.sidebar {
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 0;
+    
+    
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.video-section {
+    display: none;
+}
+
+.video-list-inner {
+    list-style: none;
+    padding: 0;
+}
+
+.video-list-inner li {
+    margin-bottom: 5px;
+}
+
+P
+/* Style for the video list */
+.container1 .video-list {
+    margin-top: 70px;
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100vh; /* Make the video list fill the full screen height */
+    overflow-y: auto; /* Add vertical scrolling for the list if needed */
+}
+
+
+
+/* Style for the video player */
+.container .video-player {
+    
+    margin-top: 45px;
+    flex: 1 0 75%; /* Updated specificity */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%; /* Set width as a fallback for older browsers */
+}
+
+
+iframe {
+    width: 100%;
+    height: 86vh; /* Set the video player's height to fill the entire container */
+    
+}
+
+
+
+
+#toggle {
+    display: none;
+}
+
+
+#toggleOne {
+    display: none;
+}
+
+
+#toggleTwo {
+    display: none;
+}
+
+/* Styles for the icon */
+.icon::before {
+  content: '\002B'; /* Unicode for down arrow */
+  transition: transform 0.3s ease; /* Smooth transition for animation */
+  font-size: 24px; 
+}
+
+#toggle:checked + label .icon::before {
+  transform: rotate(180deg);
+}
+
+#toggleOne:checked + label .icon::before {
+  transform: rotate(180deg);
+}
+
+#toggleTwo:checked + label .icon::before {
+  transform: rotate(180deg);
+}
+
+.sidebar{
+  margin-top: 0;
+  
+}
+
+
+.container1 .sidebar{
+  width: 25%; 
+}
+
+/* .sidebar .nav-item {
+  border-bottom: 1px solid #e7e7e7;
+ 
+} */
+
+.scrollable-div {
+  margin-top: 70px;
+  height: 90vh;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+
+.sidebar .nav-link{
+  width: 28vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 0px;
+  background-color: lightgray;
+  
+}
+
+
+
+
+/* .sidebar .nav-link-item{
+  width: 22vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  background-color: lightgray;
+  padding: 5px;
+ 
+}
+
+input:checked ~ ul > li {
+    height: auto;
+    .nav-link-item { padding-left: 2em; }
+  } */
+  
+
+.section-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 25vw; 
+}
+
+/* Hide the text by default */
+.section-text.collapsed {
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+    max-width: initial;
+  }
+
+  b {
+  margin-right: 10px; /* Adjust the margin as needed */  
+  font-size: 16px;
+}
+
+  .nav-pills {
+  padding-left: 0;
+  list-style: none;
+  
+}
+
+.nav-item {
+  width: 100%; /* Full width */
+  margin-bottom: 0; /* Adjust spacing */
+}
+
+
+
+.nav-link-item {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #333; /* Text color */
+  background-color: #f7f7f7; /* Background color */
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link-item:hover {
+  background-color: #e0e0e0; /* Hover background color */
+}
+
+  
+span.icon {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  
+}
+
+.sidebar .nav-item.togglicon  {
+  margin-top: 2px;
+  outline: 1px solid #333; 
+  margin-bottom: 10px;
+  
+}
+
+
+/* Styles for the togglicon class */
+.sidebar .togglicon {
+  align-items: center;
+ 
+}
+
+
+/* Styles for the i element within togglicon */
+.sidebar .togglicon i {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+/* Styles for input:hover affecting adjacent sibling elements */
+.sidebar input:hover ~ a {
+  color: rgb(1, 76, 140);
+}
+
+/* Styles for input:hover affecting adjacent sibling elements */
+.sidebar input:hover ~ i,
+.sidebar input:hover ~ i::before,
+.sidebar input:hover ~ i::after {
+  background-color: rgb(1, 76, 140);
+}
+  input ~ ul > li {
+    height: 0;
+    overflow: hidden;
+    &.nav-item { border-bottom: none; }
+  }
+
+  input:checked ~ ul > li {
+    height: auto;
+    .nav-link { padding-left: 2em; }
+  }
+
+</style>
+<!-- Google Analytics Tracking Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_TRACKING_ID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', '{{ GA_TRACKING_ID }}');
+  gtagEnabled=True;
+</script>
+</head>
+<body id="root">
+    <div class="ui tablet computer only padded grid">
+      <div class="ui container">
+        <div class="ui inverted borderless huge menu">
+          <!-- <a class="header item"><i>Data Science</i></a> -->
+          <a class="item" href="{% url 'index' %}">Home</a> 
+          <a class="item" href="{% url 'dashboard' %}">Dashboards</a>
+          <a class="item" href="{% url 'app' %}">Applications</a>
+          <a class="active item" href="{% url 'learning' %}">Learning</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui mobile only grid">
+      <div class="ui top fixed inverted borderless huge menu">
+        <a class="header item">Data Science</a>
+        <div class="right menu">
+          <div class="item">
+            <button class="ui icon toggle basic inverted button">
+              <i class="content icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="ui vertical borderless inverted fluid menu">
+          <a class="active item" href="{% url 'index' %}">Home</a> 
+          <a class="item" href="{% url 'dashboard' %}">Dashboards</a>
+          <a class="item" href="{% url 'app' %}">Applications</a>
+          <a class="active item" href="{% url 'learning' %}">Learning</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+   
+
+  <div class="container1">
+      
+  <div class="scrollable-div">       
+  <nav class="hidden-sm-down bg-faded sidebar collapsible-tree">    
+    <ul class="nav nav-pills flex-column">
+
+      <!-- <li class="nav-item togglicon" style="flex-wrap:wrap;">
+        <input type="checkbox" id="toggle">
+        <a class="nav-link " href=""><b>Course 1 : Marico Data Science Training</b><label for="toggle" >
+          <span class="icon"></span>
+        </label></a> -->
+      
+      <li class="nav-item togglicon" style="flex-wrap:wrap;">
+        <input type="checkbox" id="toggle">
+        <div onclick="toggleSectionText(this)">
+        <a class="nav-link" href="">
+          <label for="toggle" class="section-text">
+            <b>Course 1 : Marico Data Science Training</b>
+          <span class="icon"></span>
+        </label>
+      </a>
+    </div>
+        
+        <!-- <i class="chevron-down-checked chevron-left"></i> -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="" class="nav-link-item" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=b4d3ba13-add4-471f-aa9d-a1de69dbe239&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 1 - Excel 1 - Reference, Lookup, Function & Formula.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">1] Excel (Reference, Lookup, Functions & Formulas)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=55826caa-a675-4d9b-b4b7-0924852b37c7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 2 - Excel 2 - Pivot table, VBA.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">2] Excel (Pivot and VBA)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=3c1987d9-f9bb-421b-9e15-22753b4c4a24&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 4 - VS code and OOPS - Classes, Function , Constructor.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">3] VS Code and OOPS (Calsses, Functions, Constructor)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=37c3e75b-dfbf-404e-b875-da79072cc12d&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 5 - OOPS - Inheritance, Polymorphism, Abstraction, DataClass, Encapsulation.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">4] OOPS (Inheritance, Polymorphism, Abstraction, DataClass, Encapsulation) </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=e7f06cfa-afeb-4b91-9ed4-ffff1c9ec623&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 6 - Flask and Session 5 continue.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">5] Flask</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=9db86293-142f-4c52-be1f-f151904e91e0&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 7 - Numpy and Pandas.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">6] Numpy and Pandas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=52694ef0-59a1-4d6a-a864-3f22ae2ea7a4&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 8 - Coding Convention, Logging, Try Except, DRY coding, GIT Basics.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">7] Code Convention (Logging, Try Except, Dry Coding, GIT Basics)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=edfe8817-f9ec-4318-bd3d-a2f8e3f4ca61&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 9 - Git and Git Hub Advance.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">8] Git & Github Advanced</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=64f33be9-8622-4182-8720-710f382e3278&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 10 - Linux and Linux Hands-on on AWS.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">9] Linux and Linux Hands-on on AWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=4c6d4cd9-1de6-4cdf-a749-78f9d647bfa5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 11 - GCP overview , BigQuery.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">10] GCP Overview & BigQuery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=f7e5fe27-16fd-4f9e-8615-ff656a4fd90a&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 12 - GCP Vertex AI , Pub Sub, other tools Overview.mp4" data-video-type="youtube" onclick="trackVideoClick(this.getAttribute('title'))">11] GCP Vertex AI, Pub Sub</a>
+          </li>
+
+        </ul>
+        
+      </li>
+
+      <li class="nav-item togglicon" style="flex-wrap:wrap;">
+        <input type="checkbox" id="toggleOne">
+        <div onclick="toggleSectionText(this)">
+        <a class="nav-link" href="">
+          <label for="toggleOne" class="section-text">
+            <b>Course 2 : Applied Statistics</b>
+          <span class="icon"></span>
+        </label>
+      </a>
+    </div>
+
+      <!-- <li class="nav-item togglicon" style="flex-wrap:wrap;">
+        <input type="checkbox" id="toggleOne">
+        <a class="nav-link " href="#"><b>Course 2 : Applied Statistics</b><label for="toggleOne">
+          <span class="icon"></span>
+        </label></a> -->
+        
+        <!-- <i class="chevron-down-checked chevron-left"></i> -->
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="" class="nav-link-item" data-video-id="https://www.youtube.com/embed/ChLO7wwt7h0?si=bxjzXsfX3Cyseb2j" title="Which Statistical Test To Use For Hypothesis Testing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-video-type="sharepoint" onclick="trackVideoClick(this.getAttribute('title'))">1] Which Statistical Test To Use For Hypothesis Testing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://www.youtube.com/embed/WWqE7YHR4Jc?si=YFVbVN_FvFLMJcpm" title="Linear Regression" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-video-type="sharepoint" onclick="trackVideoClick(this.getAttribute('title'))">2] Linear Regression</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="" data-video-id="https://www.youtube.com/embed/oOuu8IBd-yo?si=ANlrYEl12eB0Y8nK" title="ANOVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-video-type="sharepoint" onclick="trackVideoClick(this.getAttribute('title'))">3] ANOVA</a>
+          </li>
+          
+        </ul>
+      </li>
+      <!-- <li class="nav-item togglicon" style="flex-wrap:wrap;">
+        <input type="checkbox" id="toggleTwo">
+        <a class="nav-link " href="#"><b>Section 3:Introduction To SQL Part 1</b><label for="toggleTwo">
+          <span class="icon"></span>
+        </label></a>
+        
+        
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link-item" href="#">Nav item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="#">Nav item again</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="#">One more nav</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-item" href="#">Another nav item</a>
+          </li>
+        </ul>
+      </li> -->
+      
+    </ul>
+  </nav>
+  </div>
+      <div class="video-player">
+        <iframe id="video-frame" src="https://maricoglobal.sharepoint.com/sites/MaricoAnalytics/_layouts/15/embed.aspx?UniqueId=b4d3ba13-add4-471f-aa9d-a1de69dbe239&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Session 1 - Excel 1 - Reference, Lookup, Function & Formula.mp4" frameborder="0" allowfullscreen title="YouTube video player"></iframe>
+      </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const videoLinks = document.querySelectorAll(".nav-link-item");
+          const videoFrame = document.getElementById("video-frame");
+  
+          videoLinks.forEach((link) => {
+              link.addEventListener("click", function (event) {
+                  event.preventDefault();
+                  const videoType = this.getAttribute("data-video-type");
+                  const videoSrc = this.getAttribute("data-video-id");
+                  videoFrame.src = videoSrc;
+              });
+          });
+      });
+  </script>
+
+  <script>
+
+
+function toggleSectionText(element) {
+    const sectionText = element.querySelector('.section-text');
+    sectionText.classList.toggle('collapsed');
+  }
+
+
+  </script>
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "jde5hjf8qt");
+
+    function trackVideoClick(videoName) {
+  gtag('event', 'Video_Click', {
+    'event_category': 'Video Interaction',
+    'event_label': videoName
+  });
+}
+  </script>
+
+
+  
+</body>
+</html>
