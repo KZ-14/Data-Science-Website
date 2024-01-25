@@ -385,7 +385,7 @@ select option {
                   	<span class="d-flex align-items-center justify-content-center">
                       <!-- <i class="ion-ios-quote"></i> -->
                     </span>
-                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=POD_Dashboard" rel="noopener noreferrer">StampSense AI</a></p>
+                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=POD_Dashboard" rel="noopener noreferrer" onclick="trackApplicationClick('POD_Dashboard')">StampSense AI</a></p>
                     <p>A digital tool displaying detected stamps on invoices using AI.</p>
                     <div class="position-footer">
                     <span class="position">Sales Commercial</span>
@@ -401,7 +401,7 @@ select option {
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <!-- <i class="ion-ios-quote"></i> -->
                     </span>
-                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=CODE_Tracer" rel="noopener noreferrer">CODETracer</a></p>
+                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=CODE_Tracer" rel="noopener noreferrer" onclick="trackApplicationClick('CODE_Tracer')">CODETracer</a></p>
                     <p>An application ensuring adherence to regulatory and coding standards for safety and legal compliance in development.</p>
                     <div class="position-footer">
                     <span class="position">Data Science</span>
@@ -417,7 +417,7 @@ select option {
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <!-- <i class="ion-ios-quote"></i> -->
                     </span>
-                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=EDAapp" rel="noopener noreferrer">DataMind</a></p>
+                    <p class="name"><a href="https://ai.maricoapps.biz/sso/?target=EDAapp" rel="noopener noreferrer" onclick="trackApplicationClick('EDAapp')">DataMind</a></p>
                     <p>Revolutionize data exploration with our EDA app. Visualize, analyze, and gain insights effortlessly. Transform raw data into actionable intelligence.</p>
                     <div class="position-footer">
                     <span class="position">Data Science</span>
@@ -556,14 +556,14 @@ select option {
       })(window, document, "clarity", "script", "jde5hjf8qt");
   </script>
 
-  <!-- <script>
+  <script>
     function trackApplicationClick(applicationName) {
-  gtag('event', 'application_dashboard_click', {
-    'event_category': 'Application Dashboard Interaction',
+  gtag('event', 'application_click', {
+    'event_category': 'Application Interaction',
     'event_label': applicationName
   });
 }
-  </script> -->
+  </script>
       
   </body>
 </html>
